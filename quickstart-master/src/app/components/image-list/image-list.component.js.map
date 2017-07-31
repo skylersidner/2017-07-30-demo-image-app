@@ -1,0 +1,1 @@
+{"version":3,"file":"image-list.component.js","sourceRoot":"","sources":["image-list.component.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAA0C;AAO1C,IAAa,SAAS;IALtB;QAOI,SAAI,GAAG,uBAAuB,CAAC;IAEnC,CAAC;IAAD,gBAAC;AAAD,CAAC,AAJD,IAIC;AAJY,SAAS;IALrB,gBAAS,CAAC;QACP,QAAQ,EAAE,YAAY;QACtB,WAAW,EAAE,6BAA6B;QAC1C,SAAS,EAAE,CAAE,4BAA4B,CAAC;KAC7C,CAAC;GACW,SAAS,CAIrB;AAJY,8BAAS"}
