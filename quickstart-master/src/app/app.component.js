@@ -9,7 +9,6 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Demo Image Application';
-        this.selected = false;
     }
     return AppComponent;
 }());

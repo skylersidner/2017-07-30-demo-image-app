@@ -1,0 +1,10 @@
+.image-list-item-container {
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}

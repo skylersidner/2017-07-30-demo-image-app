@@ -6,18 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var ImageList = (function () {
-    function ImageList() {
-        this.test = 'image-list is working';
+var LoginService = (function () {
+    function LoginService() {
+        this.currentUser = { username: '' };
     }
-    return ImageList;
+    LoginService.prototype.login = function (username) {
+        this.currentUser.username = username;
+    };
+    ;
+    LoginService.prototype.logout = function () {
+        this.currentUser.username = '';
+    };
+    ;
+    return LoginService;
 }());
-ImageList = __decorate([
-    core_1.Component({
-        selector: 'image-list',
-        templateUrl: './image-list.component.html',
-        styleUrls: ['./image-list.component.css']
-    })
-], ImageList);
-exports.ImageList = ImageList;
-//# sourceMappingURL=image-list.component.js.map
+LoginService = __decorate([
+    core_1.Injectable()
+], LoginService);
+exports.LoginService = LoginService;
+//# sourceMappingURL=login.service.js.map

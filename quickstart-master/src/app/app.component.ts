@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageItem } from './classes/imageItem';
 
 @Component({
   selector: 'my-app',
@@ -7,6 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent  {
 
   title = 'Demo Image Application';
-  selected = false;
 
 }

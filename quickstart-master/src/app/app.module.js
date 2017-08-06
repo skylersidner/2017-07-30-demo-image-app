@@ -8,8 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-var image_list_component_1 = require("./components/image-list/image-list.component");
-var image_detail_component_1 = require("./components/image-detail/image-detail.component");
+var image_list_component_1 = require("./components/image/image-list/image-list.component");
+var image_list_item_component_1 = require("./components/image/image-list-item/image-list-item.component");
+var image_detail_component_1 = require("./components/image/image-detail/image-detail.component");
+var image_service_1 = require("./services/image.service");
+var login_service_1 = require("./services/login.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,13 +20,22 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [
+            platform_browser_1.BrowserModule
+        ],
         declarations: [
             app_component_1.AppComponent,
             image_list_component_1.ImageList,
+            image_list_item_component_1.ImageListItem,
             image_detail_component_1.ImageDetail
         ],
-        bootstrap: [app_component_1.AppComponent]
+        providers: [
+            image_service_1.ImageService,
+            login_service_1.LoginService
+        ],
+        bootstrap: [
+            app_component_1.AppComponent
+        ]
     })
 ], AppModule);
 exports.AppModule = AppModule;
