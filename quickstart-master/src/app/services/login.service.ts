@@ -1,14 +1,21 @@
 import { Injectable } from '@angular/core';
+import { User } from '../classes/user';
 
 @Injectable()
 export class LoginService {
-    currentUser = {username: ''};
+    currentUser: User;
 
     login(username: string) {
-        this.currentUser.username = username;
+        let now = new Date();
+
+        this.currentUser = new User(username, now);
     };
 
     logout() {
-        this.currentUser.username = '';
+        this.currentUser = null;
     };
+
+    getUser() {
+        return this.currentUser;
+    }
 }

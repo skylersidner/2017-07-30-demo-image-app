@@ -11,6 +11,7 @@ var app_component_1 = require("./app.component");
 var image_list_component_1 = require("./components/image/image-list/image-list.component");
 var image_list_item_component_1 = require("./components/image/image-list-item/image-list-item.component");
 var image_detail_component_1 = require("./components/image/image-detail/image-detail.component");
+var login_component_1 = require("./components/login/login.component");
 var image_service_1 = require("./services/image.service");
 var login_service_1 = require("./services/login.service");
 var AppModule = (function () {
@@ -27,7 +28,8 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             image_list_component_1.ImageList,
             image_list_item_component_1.ImageListItem,
-            image_detail_component_1.ImageDetail
+            image_detail_component_1.ImageDetail,
+            login_component_1.Login
         ],
         providers: [
             image_service_1.ImageService,

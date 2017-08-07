@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="login-container">
+    <div *ngIf="currentUser">
+        <span>User: {{currentUser.username}} | Last Login: {{currentUser.lastLogin | date:medium}}</span>
+        <button (click)="onLogout()">Logout</button>
+    </div>
+    <div *ngIf="!currentUser">
+        <form (submit)="onLogin(usernameEntry.value)">
+            <input #usernameEntry>
+            <button (click)="onLogin(usernameEntry.value)">Login</button>
+        </form>
+    </div>
+</div>

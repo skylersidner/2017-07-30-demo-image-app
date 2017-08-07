@@ -5,6 +5,8 @@ import { AppComponent }  from './app.component';
 import { ImageList } from './components/image/image-list/image-list.component';
 import { ImageListItem } from './components/image/image-list-item/image-list-item.component';
 import { ImageDetail } from './components/image/image-detail/image-detail.component';
+import { Login } from './components/login/login.component';
+
 import { ImageService } from './services/image.service';
 import { LoginService } from './services/login.service';
 
@@ -16,7 +18,8 @@ import { LoginService } from './services/login.service';
       AppComponent,
       ImageList,
       ImageListItem,
-      ImageDetail
+      ImageDetail,
+      Login
   ],
   providers: [
       ImageService,

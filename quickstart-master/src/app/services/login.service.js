@@ -6,18 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+var user_1 = require("../classes/user");
 var LoginService = (function () {
     function LoginService() {
-        this.currentUser = { username: '' };
     }
     LoginService.prototype.login = function (username) {
-        this.currentUser.username = username;
+        var now = new Date();
+        this.currentUser = new user_1.User(username, now);
     };
     ;
     LoginService.prototype.logout = function () {
-        this.currentUser.username = '';
+        this.currentUser = null;
     };
     ;
+    LoginService.prototype.getUser = function () {
+        return this.currentUser;
+    };
     return LoginService;
 }());
 LoginService = __decorate([

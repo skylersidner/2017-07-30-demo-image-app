@@ -1,9 +1,16 @@
 h1 {
   text-align: center;
+  width: auto;
 }
 
 image-list {
   float: left;
   width: auto;
+}
+
+login {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
