@@ -1,0 +1,4 @@
+<div class="list-item-container">
+    <img src="{{item.url}}" *ngIf="!isSourceError" (error)="onSourceError($event)">
+    <div class="no-image" *ngIf="isSourceError">{{noImage}}</div>
+</div>

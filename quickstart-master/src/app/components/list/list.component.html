@@ -1,0 +1,12 @@
+<div class="list-container">
+    <ul>
+        <li *ngFor="let item of visibleList" (click)="onSelect(item)"
+            [class.selected]="item === selectedListItem">
+            <list-item [item]="item"></list-item>
+        </li>
+    </ul>
+
+    <div (click)="onClose()">
+        <detail *ngIf="isShowingDetail" [item]="selectedListItem"></detail>
+    </div>
+</div>

@@ -9,35 +9,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var image_service_1 = require("../../../services/image.service");
-var ImageList = (function () {
-    function ImageList(imageService) {
+var image_service_1 = require("../../services/image.service");
+var List = (function () {
+    function List(imageService) {
         this.imageService = imageService;
-        this.visibleImageList = [];
+        this.visibleList = [];
         this.pageNumber = 1;
         this.isShowingDetail = false;
-        this.visibleImageList = this.imageService.getImages();
+        this.visibleList = this.imageService.getImages();
     }
-    ImageList.prototype.ngOnChanges = function () {
-        this.visibleImageList = this.imageService.getImages(this.pageNumber);
+    List.prototype.ngOnChanges = function () {
+        this.visibleList = this.imageService.getImages(this.pageNumber);
     };
-    ImageList.prototype.onSelect = function (imageItem) {
-        this.selectedListItem = imageItem;
+    List.prototype.onSelect = function (Item) {
+        this.selectedListItem = Item;
         this.isShowingDetail = true;
     };
-    ImageList.prototype.onClose = function () {
+    List.prototype.onClose = function () {
         this.isShowingDetail = false;
         this.selectedListItem = null;
     };
-    return ImageList;
+    return List;
 }());
-ImageList = __decorate([
+List = __decorate([
     core_1.Component({
-        selector: 'image-list',
-        templateUrl: './image-list.component.html',
-        styleUrls: ['./image-list.component.css']
+        selector: 'list',
+        templateUrl: 'list.component.html',
+        styleUrls: ['list.component.css']
     }),
     __metadata("design:paramtypes", [image_service_1.ImageService])
-], ImageList);
-exports.ImageList = ImageList;
-//# sourceMappingURL=image-list.component.js.map
+], List);
+exports.List = List;
+//# sourceMappingURL=list.component.js.map

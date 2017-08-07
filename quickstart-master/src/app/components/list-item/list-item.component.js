@@ -9,27 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var imageItem_1 = require("../../../classes/imageItem");
-var ImageListItem = (function () {
-    function ImageListItem() {
+var item_1 = require("../../classes/item");
+var ListItem = (function () {
+    function ListItem() {
         this.isSourceError = false;
         this.noImage = '(Image not available)';
     }
-    ImageListItem.prototype.onSourceError = function () {
+    ListItem.prototype.onSourceError = function () {
         this.isSourceError = true;
     };
-    return ImageListItem;
+    return ListItem;
 }());
 __decorate([
     core_1.Input(),
-    __metadata("design:type", imageItem_1.ImageItem)
-], ImageListItem.prototype, "imageItem", void 0);
-ImageListItem = __decorate([
+    __metadata("design:type", item_1.Item)
+], ListItem.prototype, "item", void 0);
+ListItem = __decorate([
     core_1.Component({
-        selector: 'image-list-item',
-        templateUrl: './image-list-item.component.html',
-        styleUrls: ['./image-list-item.component.css']
+        selector: 'list-item',
+        templateUrl: 'list-item.component.html',
+        styleUrls: ['list-item.component.css']
     })
-], ImageListItem);
-exports.ImageListItem = ImageListItem;
-//# sourceMappingURL=image-list-item.component.js.map
+], ListItem);
+exports.ListItem = ListItem;
+//# sourceMappingURL=list-item.component.js.map

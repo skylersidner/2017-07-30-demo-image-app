@@ -1,17 +1,17 @@
-.image-list-container li {
+.list-container li {
     /*list-style: none;*/
     display: inline-block;
     margin: 3px;
     border: 4px black solid;
 }
 
-.image-list-container li.selected {
+.list-container li.selected {
     border: 4px blue solid;
 }
 
 
 
-.image-list-container image-detail {
+.list-container detail {
     position: absolute;
     top: 0;
     left: 0;

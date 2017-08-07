@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ImageItem } from './classes/imageItem';
 
 @Component({
   selector: 'my-app',

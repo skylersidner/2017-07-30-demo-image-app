@@ -1,4 +1,4 @@
-export class ImageItem {
+export class Item {
     id: number;
     sourceUrl: string;
 }

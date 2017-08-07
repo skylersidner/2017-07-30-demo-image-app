@@ -1,5 +1,5 @@
 
-.image-detail-wrapper{
+.detail-wrapper{
     width: 500px;
     height: 500px;
     background: white;
@@ -8,12 +8,4 @@
     display:flex;
     justify-content:center;
     align-items:center;
-}
-
-image-detail img {
-
-}
-
-image-detail .no-image {
-
 }

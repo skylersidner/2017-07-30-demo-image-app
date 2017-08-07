@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-var image_list_component_1 = require("./components/image/image-list/image-list.component");
-var image_list_item_component_1 = require("./components/image/image-list-item/image-list-item.component");
-var image_detail_component_1 = require("./components/image/image-detail/image-detail.component");
+var list_component_1 = require("./components/list/list.component");
+var list_item_component_1 = require("./components/list-item/list-item.component");
+var detail_component_1 = require("./components/detail/detail.component");
+var comments_component_1 = require("./components/comments/comments.component");
 var login_component_1 = require("./components/login/login.component");
 var image_service_1 = require("./services/image.service");
 var login_service_1 = require("./services/login.service");
@@ -26,9 +27,10 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            image_list_component_1.ImageList,
-            image_list_item_component_1.ImageListItem,
-            image_detail_component_1.ImageDetail,
+            list_component_1.List,
+            list_item_component_1.ListItem,
+            detail_component_1.Detail,
+            comments_component_1.Comments,
             login_component_1.Login
         ],
         providers: [

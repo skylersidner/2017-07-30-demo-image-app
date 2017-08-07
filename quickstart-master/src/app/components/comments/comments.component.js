@@ -9,31 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var image_service_1 = require("../../../services/image.service");
-var imageItem_1 = require("../../../classes/imageItem");
-var ImageDetail = (function () {
-    function ImageDetail(imageService) {
+var image_service_1 = require("../../services/image.service");
+var Comments = (function () {
+    function Comments(imageService) {
         this.imageService = imageService;
-        this.isSourceError = false;
-        this.noImage = '(Image not available)';
+        this.test = "Testing comments!";
     }
     ;
-    ImageDetail.prototype.onSourceError = function () {
-        this.isSourceError = true;
-    };
-    return ImageDetail;
+    return Comments;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", imageItem_1.ImageItem)
-], ImageDetail.prototype, "imageItem", void 0);
-ImageDetail = __decorate([
+Comments = __decorate([
     core_1.Component({
-        selector: 'image-detail',
-        templateUrl: './image-detail.component.html',
-        styleUrls: ['./image-detail.component.css']
+        selector: 'comments',
+        templateUrl: 'comments.component.html',
+        styleUrls: ['comments.component.css']
     }),
     __metadata("design:paramtypes", [image_service_1.ImageService])
-], ImageDetail);
-exports.ImageDetail = ImageDetail;
-//# sourceMappingURL=image-detail.component.js.map
+], Comments);
+exports.Comments = Comments;
+//# sourceMappingURL=comments.component.js.map
