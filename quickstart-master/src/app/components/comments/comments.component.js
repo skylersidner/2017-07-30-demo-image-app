@@ -21,8 +21,8 @@ var Comments = (function () {
 Comments = __decorate([
     core_1.Component({
         selector: 'comments',
-        templateUrl: 'comments.component.html',
-        styleUrls: ['comments.component.css']
+        templateUrl: './comments.component.html',
+        styleUrls: ['./comments.component.css']
     }),
     __metadata("design:paramtypes", [image_service_1.ImageService])
 ], Comments);

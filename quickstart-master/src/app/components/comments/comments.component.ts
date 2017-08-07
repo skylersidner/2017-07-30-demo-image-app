@@ -4,8 +4,8 @@ import { Item } from '../../classes/item';
 
 @Component({
     selector: 'comments',
-    templateUrl: 'comments.component.html',
-    styleUrls: [ 'comments.component.css']
+    templateUrl: './comments.component.html',
+    styleUrls: [ './comments.component.css']
 })
 export class Comments  {
 

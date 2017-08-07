@@ -3,8 +3,8 @@ import { Item } from '../../classes/item';
 
 @Component({
     selector: 'list-item',
-    templateUrl: 'list-item.component.html',
-    styleUrls: [ 'list-item.component.css']
+    templateUrl: './list-item.component.html',
+    styleUrls: [ './list-item.component.css']
 })
 export class ListItem  {
     @Input() item: Item;

@@ -34,8 +34,8 @@ var List = (function () {
 List = __decorate([
     core_1.Component({
         selector: 'list',
-        templateUrl: 'list.component.html',
-        styleUrls: ['list.component.css']
+        templateUrl: './list.component.html',
+        styleUrls: ['./list.component.css']
     }),
     __metadata("design:paramtypes", [image_service_1.ImageService])
 ], List);

@@ -30,8 +30,8 @@ __decorate([
 Detail = __decorate([
     core_1.Component({
         selector: 'detail',
-        templateUrl: 'detail.component.html',
-        styleUrls: ['detail.component.css']
+        templateUrl: './detail.component.html',
+        styleUrls: ['./detail.component.css']
     }),
     __metadata("design:paramtypes", [image_service_1.ImageService])
 ], Detail);

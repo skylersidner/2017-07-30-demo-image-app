@@ -27,8 +27,8 @@ __decorate([
 ListItem = __decorate([
     core_1.Component({
         selector: 'list-item',
-        templateUrl: 'list-item.component.html',
-        styleUrls: ['list-item.component.css']
+        templateUrl: './list-item.component.html',
+        styleUrls: ['./list-item.component.css']
     })
 ], ListItem);
 exports.ListItem = ListItem;

@@ -4,8 +4,8 @@ import { Item } from '../../classes/item';
 
 @Component({
     selector: 'detail',
-    templateUrl: 'detail.component.html',
-    styleUrls: [ 'detail.component.css']
+    templateUrl: './detail.component.html',
+    styleUrls: [ './detail.component.css']
 })
 export class Detail  {
 
